@@ -6,8 +6,9 @@ const int LED2 = 9;
 const int LED3 = 5;
 const int LED4 = 6;
 const int LED5 = 7;
-int sensorValue = 0;
-char *tulisan;
+int sensorValue = 0;  //nilai resistansi dari tiap tombol, harusnya button value ,tapi, kadung ok, yo wes
+char *tulisan;        //terdapat * didepan variabel agar dapat menyimpan data lebih banyak dari char biasa
+                      //jika menggunakan string, memori yang diambil lebih besar
 
 U8GLIB_SSD1306_128X64 u8g(U8G_I2C_OPT_NONE|U8G_I2C_OPT_DEV_0);
 
